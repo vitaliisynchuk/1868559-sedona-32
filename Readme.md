@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Vitalii Synchuk](https://up.htmlacademy.ru/htmlcss/32/user/1868559).
-* Наставник: `Элла Сидорова`.
+* Наставник: [Элла Сидорова](https://up.htmlacademy.ru/htmlcss/32/user/147338).
 
 ---
 
