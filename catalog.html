@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
-      <nav class="header-navigation">
+      <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a href="#" class="navigation-link">Главная</a>
+            <a href="index.html" class="navigation-link">Главная</a>
           </li>
           <li class="navigation-item">
             <a href="#" class="navigation-link">О Седоне</a>
@@ -18,39 +19,41 @@
             <a class="navigation-link navigation-link-current">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a href="#" class="navigation-link">
+      </nav>
+      <div class="user-tools">
+        <ul class="user-tools-list">
+          <li class="user-tools-item">
+            <a href="#" class="user-tools-link">
               <span class="visually-hidden">
               Поиск
               </span>
             </a>
           </li>
-          <li class="navigation-item">
-            <button class="navigation-button" type="button">
+          <li class="user-tools-item">
+            <a href="#" class="user-tools-link">
+              <span class="visually-hidden">
               Избранное
-             </button>
-            <button class="info" type="button">
+              </span>
               <span class="visually-hidden">
               Количество избранного
               </span>
-            </button>
+            </a>
           </li>
-          <li class="navigation-item">
-            <a href="#" class="navigation-link button button-brown">
+          <li class="user-tools-item">
+            <a href="#" class="user-tools-link regular-button brown-button">
               Хочу сюда!
             </a>
           </li>
         </ul>
+      </div>
         <a class="navigation-logo">
-        <img class="page-header-logo" alt="Логтоип Седона" src="">
+        <img class="page-header-logo" alt="Логтоип Седона" src="images/sedona_index_logo.svg"
+        width="138px" height="70">
         </a>
-      </nav>
     </header>
-    <main class="main-inner">
-      <header>
-        <h1 class="inner-header-title">Гостиницы Седоны</h1>
-      </header>
+    <div class="catalog-filter-background">
+    <main class="inner-main">
+      <h1 class="main-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs-list">
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link" href="index.html">
@@ -141,17 +144,18 @@
           </fieldset>
           <ul class="catalog-button-list">
             <li class="catalog-button-item">
-              <button class="button" type="submit">
+              <button class="regular-button blue-button" type="submit">
                 Применить
               </button>
             </li>
             <li class="catalog-button-item">
-              <button class="button-text" type="reset">
+              <button class="text-button" type="reset">
                 Сбросить
               </button>
             </li>
           </ul>
         </form>
+    </div>
         <h2 class="section-subtitle">Найдено гостиниц: 38</h2>
         <form class="sorting-type">
           <label class="visually-hidden" for="sorting">
@@ -172,17 +176,17 @@
             Отсотрировать продукты
           </button>
         </form>
-        <a href="#" class="button">
+        <a href="#" class="catalog-type-button">
           <span class="visually-hidden">
             Показать карточки
           </span>
         </a>
-        <a href="#" class="button">
+        <a href="#" class="catalog-type-button">
           <span class="visually-hidden">
             Показать полностю
           </span>
         </a>
-        <a href="#" class="button">
+        <a href="#" class="catalog-type-button">
           <span class="visually-hidden">
             Показать список
           </span>
@@ -190,70 +194,75 @@
         <ul class="product-cart-list">
           <li class="product-cart-item">
             <a class="product-cart-link" href="product.html">
-              <img class="product-cart-imagen" scr="">
+              <img class="product-cart-imagen" src="images/catalog/amara_resort_spa.jpg"
+              width="180px" height ="120px">
+
               <h3 class="product-cart-title">Amara Resort & Spa</h3>
             </a>
             <span class="product-cart-type">Гостиница</span>
             <span class="product-cart-price">От 4000 ₽</span>
             <span class="product-cart-stars">4</span>
             <span class="product-cart-rating">Рейтинг: 8,5</span>
-            <a href="#" class="button product-cart-button button-brown">
+            <a href="#" class="regular-button brown-button">
               Подробнее
             </a>
-            <a href="#" class="button product-cart-button button-blue">
+            <a href="#" class="regular-button blue-button">
               В избранное
             </a>
           </li>
           <li class="product-cart-item">
             <a class="product-cart-link" href="product.html">
-              <img class="product-cart-imagen" scr="">
+              <img class="product-cart-imagen" src="images/catalog/desert_quail_inn.jpg"
+              width="180px" height ="120px">
               <h3 class="product-cart-title">Desert Quail Inn</h3>
             </a>
             <span class="product-cart-type">Мотель</span>
             <span class="product-cart-price">От 3000 ₽</span>
             <span class="product-cart-stars">3</span>
             <span class="product-cart-rating">Рейтинг: 8,9</span>
-            <a href="#" class="button product-cart-button button-brown">
+            <a href="#" class="regular-button brown-button">
               Подробнее
             </a>
-            <a href="#" class="button product-cart-button button-blue">
+            <a href="#" class="regular-button blue-button">
               В избранное
             </a>
           </li>
           <li class="product-cart-item">
             <a class="product-cart-link" href="product.html">
-              <img class="product-cart-imagen" scr="">
+              <img class="product-cart-imagen" src="images/catalog/villas_at_poco_diablo.jpg"
+              width="180px" height ="120px">
               <h3 class="product-cart-title">Villas at Poco Diablo</h3>
             </a>
             <span class="product-cart-type">Апартаменты</span>
             <span class="product-cart-price">От 2000 ₽</span>
             <span class="product-cart-stars">2</span>
             <span class="product-cart-rating">Рейтинг: 9,2</span>
-            <a href="#" class="button product-cart-button button-brown">
+            <a href="#" class="regular-button brown-button">
               Подробнее
             </a>
-            <a href="#" class="button product-cart-button button-blue button-primary active">
-              В избранное
+            <a href="#" class="regular-button button-primary-active">
+              В избранном
             </a>
           </li>
           <li class="product-cart-item">
             <a class="product-cart-link" href="product.html">
-              <img class="product-cart-imagen" scr="">
+              <img class="product-cart-imagen" src="images/catalog/green_tree_inn.jpg"
+              width="180px" height ="120px">
               <h3 class="product-cart-title">GreenTree Inn</h3>
             </a>
             <span class="product-cart-type">Гостиница</span>
             <span class="product-cart-price">От 3000 ₽</span>
             <span class="product-cart-stars">2</span>
             <span class="product-cart-rating">Рейтинг: 9,2</span>
-            <a href="#" class="button product-cart-button button-brown">
+            <a href="#" class="regular-button brown-button">
               Подробнее
             </a>
-            <a href="#" class="button product-cart-button button-blue">
+            <a href="#" class="regular-button blue-button">
               В избранное
             </a>
           </li>
         </ul>
-        <button class="button pagination-show-more button-blue" type="button">
+        <button class="show-more-button blue-button" type="button">
           Загрузить еще
         </button>
         <ul class="pagination-list">
@@ -296,37 +305,38 @@
           </button>
         </form>
       </section>
-      <section class="newsletter">
+      <section class="catalog-newsletter">
         <h2 class="section-title">Подпишитесь на рассылку</h2>
         <p class="newsletter-description">
           Только полезная информация и никакого спама,
           <br>честное бойскаутское!
         </p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="newsletter-email">
+          <div class="newsletter-email">
             <label class="visually-hidden" for="newsletter-email">Email</label>
             <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-          </p>
-          <button class="button button-blue" type="submit">Подписаться</button>
+          </div>
+          <button class="subscribe-button blue-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
     <footer class="page-footer">
+      <h1 class="visually-hidden section-title">Свяжись с нами</h1>
       <section class="social">
         <h2 class="visually-hidden">Социальные Сети</h2>
         <ul class="social-list">
           <li class="social-item">
-            <a class="button" href="#">
+            <a class="regular-button blue-button" href="#">
               <span class="visually-hidden">Твиттер</span>
             </a>
           </li>
           <li class="social-item">
-            <a class="buttom" href="#">
+            <a class="regular-button blue-button" href="#">
               <span class="visually-hidden">Facebook</span>
             </a>
           </li>
           <li class="social-item">
-            <a class="button" href="#">
+            <a class="regular-button blue-button" href="#">
               <span class="visually-hidden">YouTube</span>
             </a>
           </li>
@@ -338,7 +348,7 @@
       </section>
       <section class="about">
         <h2 class="visually-hidden">Сайт Организации</h2>
-        <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+        <a class="htmlacademy-link button" href="https://htmlacademy.ru/">.html academy</a>
       </section>
     </footer>
   </body>
