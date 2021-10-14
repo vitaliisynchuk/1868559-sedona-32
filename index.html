@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header-container">
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -20,6 +20,10 @@
           </li>
         </ul>
       </nav>
+      <a class="navigation-logo">
+        <img class="page-header-logo" alt="Логтоип Седона" src="images/sedona_icon.png"
+        width="138" height="70">
+      </a>
       <div class="user-tools">
         <ul class="user-tools-list">
           <li class="user-tools-item">
@@ -46,19 +50,17 @@
           </li>
         </ul>
       </div>
-        <a class="navigation-logo">
-        <img class="page-header-logo" alt="Логтоип Седона" src="images/sedona_index_logo.svg"
-        width="138" height="70">
-        </a>
+
     </header>
-    <main class="page-main">
+    <main class="page-main main-container">
+      <div class="page-container">
       <section class="promo">
       <h1 class="visually-hidden">Седона</h1>
-      <img class="promo-img" src="images/sedona_welcome.svg" width="458" height="352"
+      <img class="promo-img" src="images/sedona_welcome.png" width="458" height="352"
       alt="Добро пожаловать в прекрасную Седону. Потому-что Гранд Каньон в пригрыше!">
       </section>
       <section class="advantages">
-        <div class="section-title-background">
+        <div class="section-title-container">
         <h2 class="section-title">
           Седона — небольшой городок в Аризоне,
           <br>заслуживающий большего!
@@ -81,9 +83,11 @@
                для туристов, там течёт<br>
                своя жизнь
             </p>
+            </div>
+          <li class="advantages-item-image">
             <img class="advantages-foto" src="images/city.jpg" width="800" height="384"
             alt="Фотография Города">
-            </div>
+          </li>
           </li>
           <li class="advantages-item">
             <div class="grey-background">
@@ -120,6 +124,10 @@
             </p>
             </div>
           </li>
+          <li class="advantages-item-image">
+            <img class="advantages-foto" src="images/bridge.jpg" width="800" height="384"
+            alt="Фотография Моста">
+          </li>
           <li class="advantages-item">
             <div class="blue-background">
             <h3 class="advantages-title">
@@ -134,8 +142,6 @@
               <br>Если вы осмелитесь,
               <br>разумеется
             </p>
-            <img class="advantages-foto" src="images/bridge.jpg" width="800" height="384"
-            alt="Фотография Моста">
             </div>
           </li>
           <li class="advantages-item">
@@ -207,11 +213,13 @@
           <button class="regular-button subscribe-button blue-button" type="submit">Подписаться</button>
         </form>
       </section>
+      </div>
     </main>
     <footer class="page-footer">
-      <h1 class="visually-hidden section-title">Свяжись с нами</h1>
+      <div class="page-footer-container">
+      <h1 class="visually-hidden section-title" hidden>Свяжись с нами</h1>
       <section class="social">
-        <h2 class="visually-hidden section-title">Социальные Сети</h2>
+        <h2 class="visually-hidden section-title" hidden>Социальные Сети</h2>
         <ul class="social-list">
           <li class="social-item">
             <a class="regular-button blue-button" href="#">
@@ -231,13 +239,14 @@
         </ul>
       </section>
       <section class="contacts">
-        <h2 class="visually-hidden section-title">Номер Телефона</h2>
+        <h2 class="visually-hidden section-title" hidden>Номер Телефона</h2>
         <a class="contacts-phone" href="tel:+7 (812) 812-12-12">+7 (812) 812-12-12</a>
       </section>
       <section class="about">
-        <h2 class="visually-hidden section-title">Сайт Организации</h2>
+        <h2 class="visually-hidden section-title" hidden>Сайт Организации</h2>
         <a class="htmlacademy-link button" href="https://htmlacademy.ru/">.html academy</a>
       </section>
+      </div>
     </footer>
   </body>
 </html>
