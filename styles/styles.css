@@ -29,6 +29,15 @@ body {
   flex-direction: column;
   min-height: 100%;
 }
+.page {
+  width: 100%;
+  background-color: #F2F2F2;
+}
+.page-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  background-color:#FFFFFF ;
+}
 .regular-button {
   font-weight: 700;
   font-family: inherit;
@@ -41,13 +50,17 @@ body {
   text-decoration: none;
 }
 .search-hotels-button {
+  display: inline-block;
   font-size: 20px;
   line-height: 36px;
   border-radius: 10px;
+  margin-bottom: 91px;
 }
 .show-more-button {
+  display: flex;
   font-size: 20px;
   line-height: 26px;
+  margin: 30px auto;
 }
 .subscribe-button {
   font-size: 20px;
@@ -64,6 +77,11 @@ body {
 .catalog-type-button {
   color:#000000;
   border: 2px solid #E6E6E6;
+  border-radius: 4px;
+  width: 48px;
+  height: 48px;
+  margin: 0;
+  margin-left: 8px;
 }
 .button-primary-active {
   background: #7DB54F;
@@ -75,6 +93,11 @@ body {
   background: #83B3D3;
 }
 .pagination-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
   font-family: inherit;
   font-weight: 700;
   font-size: 20px;
@@ -85,8 +108,11 @@ body {
   background: #83B3D3;
   color: #FFFFFF;
   border-radius: 4px;
+  margin-left: 8px;
 }
 .navigation-link, .user-tools-link {
+  display: block;
+  padding: 10px 16px;
   font-weight: 700;
   text-decoration: none;
   font-size: 20px;
@@ -97,6 +123,8 @@ body {
   text-decoration: none;
 }
 .breadcrumbs-link {
+  padding-right: 10px;
+  padding-top: 10px;
   font-family: inherit;
   font-size: 16px;
   line-height: 21px;
@@ -105,11 +133,13 @@ body {
 }
 
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 390px;
   text-align: center;
   list-style: none;
   margin: 0;
   padding: 0;
-
 }
 .user-tools-list {
   text-align: center;
@@ -117,6 +147,8 @@ body {
   margin: 0;
   padding: 0;
   width: 270px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .advantages-list {
   list-style: none;
@@ -134,9 +166,13 @@ body {
   margin: 0;
 }
 .breadcrumbs-list {
+  display: flex;
   list-style: none;
   margin: 0;
+  padding: 0;
+  margin-left: 71px;
 }
+
 .catalog-filter-list {
   list-style: none;
   margin: 0;
@@ -151,10 +187,24 @@ body {
 }
 .pagination-list {
   list-style: none;
-  margin: 0;
+  display: flex;
+   margin: 0;
+   padding:
+}
+
+.pagination-container {
+  display: flex;
+  margin-top: 31px;
+  margin-bottom: 89px;
+}
+.paging-type {
+  display: flex;
+  margin-left: auto;
 }
 .advantages-item {
- width: 400px;
+  width: 400px;
+  padding-top: 98px;
+  padding-bottom: 77px;
 }
 .pagination-current {
   background: #F2F2F2;
@@ -184,10 +234,14 @@ body {
 .main-container {
   flex-grow: 1;
 }
-.page-container {
-  width: 1200px;
-  margin: 0 auto;
-
+.main-title {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  margin: 0;
+  margin-left: 71px;
+}
 }
 .catalog-products {
   display: flex;
@@ -210,12 +264,17 @@ body {
   text-align: center;
   width: 720px;
   margin: 0 auto;
-
 }
+
 .about {
   width: 120px;
   margin-right: 72px;
-
+}
+.htmlacademy-link {
+  display: block;
+  padding-left: 53px;
+  padding-top: 42px;
+  padding-bottom: 44px;
 }
 .section-title {
   color: inherit;
@@ -229,7 +288,20 @@ body {
    width: 1200px;
    margin: 0 auto;
  }
+ .section-title-container .section-title {
+  margin-top: 63px;
+  margin-bottom: 23px;
+ }
+ .section-title-container .advantages-prescription {
+  margin-bottom: 79px;
+}
  .product-container {
+
+   width: 1056px;
+   margin: 0 auto;
+ }
+ .sorting-container {
+   display: flex;
    width: 1056px;
    margin: 0 auto;
  }
@@ -254,6 +326,16 @@ body {
   text-transform: uppercase;
   margin: 0;
  }
+ sorting-subtitle {
+   width: 337px;
+   margin-left: 71px;
+ }
+ .sorting-type {
+   width: 287px;
+   margin: 0;
+   margin-left: 192px;
+   padding-right: 73px;
+ }
 .advantages-prescription {
   font-size: 22px;
   line-height: 36px;
@@ -266,10 +348,26 @@ body {
 }
 .newsletter-description {
   margin: 0;
+  padding-bottom: 26px;
 }
+catalog-newsletter-description {
+  margin: 0;
+  padding-bottom: 26px;
+}
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 94px;
+}
+.searching .section-title {
+  margin-top: 91px;
+  margin-bottom: 15px;
+}
+
 .searching-description {
   font-size: 22px;
   line-height: 36px;
+  padding-bottom: 73px;
 }
 .catalog-filter-background {
   background-image: url("/images/backround/catalog_background.jpg");
@@ -304,10 +402,14 @@ body {
 .newsletter {
   color: #FFFFFF;
   text-align: center;
-  background-image: url("/images/backround/index_section_background.jpg");
+  background-image: url("../images/backround/index_section_background.jpg");
   background-color: #5d87a3;
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+.newsletter .section-title {
+  padding-bottom: 15px;
+  padding-top: 94px;
 }
 .catalog-newsletter {
   font-family: inherit
@@ -316,6 +418,7 @@ body {
   width: 800px;
   margin: 0 auto;
 }
+
 
 .product-cart-rating {
   font-size: 16px;
@@ -326,17 +429,24 @@ body {
   border-radius: 4px;
 }
 .promo {
-  background-image: url("/images/backround/index_background.jpg");
+  display: flex;
+  background-image: url("../images/backround/index_background.jpg");
   background-color: #5d87a3;
   color: #FFFFFF;
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 .promo-img {
-  display: block;
   margin: 0 auto;
+  margin-top: 51px;
+  margin-bottom: 82px;
 }
 .contacts-phone {
+  display: block;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  padding-left: 45px;
+  padding-right: 53px;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
@@ -345,9 +455,26 @@ body {
   color: inherit;
 }
 .navigation-logo {
+  margin: 0 auto;
   width: 138px;
-  margin-left: auto;
-  margin-right: auto;
+
+}
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.social-item {
+  padding: 50px 15px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 *::before, *::after {
   box-sizing:inherit ;

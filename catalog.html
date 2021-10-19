@@ -5,7 +5,8 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-  <body>
+  <body class="page">
+  <div class="page-wrapper">
     <header class="page-header page-header-container">
       <nav class="navigation">
         <ul class="navigation-list">
@@ -52,11 +53,9 @@
       </div>
     </header>
     <main class="inner-main main-container">
-      <div class="page-container">
-        <section class="catalog-products">
-          <div class="catalog-filter-container">
-            <h1 class="main-title">Гостиницы Седоны</h1>
-            <div class="catalog-filter-background">
+      <section class="catalog-products">
+        <div class="catalog-filter-container catalog-filter-background">
+          <h1 class="main-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs-list">
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="index.html">
@@ -79,19 +78,19 @@
                 </legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
-                    <input class="control-input" id="checkbox-1" type="checkbox" name="Swimpool" checked>
+                    <input class="control-input" id="checkbox-1" type="checkbox" name="infrastructure" value="Swimpool" checked>
                     <label class="control-lable" for="checkbox-1">
                         Бассейн
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <input class="control-input" id="checkbox-2" type="checkbox" name="Parking" checked>
+                    <input class="control-input" id="checkbox-2" type="checkbox" name="infrastructure" value="Parking" checked>
                     <label class="control-lable" for="checkbox-2">
                         Парковка
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <input class="control-input" id="checkbox-3" type="checkbox" name="Wi-Fi">
+                    <input class="control-input" id="checkbox-3" type="checkbox" name="infrastructure" value="Wi-Fi">
                     <label class="control-lable" for="checkbox-3">
                         Wi-Fi
                       </label>
@@ -104,19 +103,19 @@
                 </legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
-                    <input class="control-input" id="radio-1" type="radio" name="Hotel" checked>
+                    <input class="control-input" id="radio-1" type="radio" name="acomodation" value="Hotel" checked>
                     <label class="control-lable" for="radio-1">
                       Гостиница
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <input class="control-input" id="radio-2" type="radio" name="Motel">
+                    <input class="control-input" id="radio-2" type="radio" name="acomodation" value="Motel">
                     <label class="control-lable" for="radio-2" >
                       Мотель
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <input class="control-input" id="radio-3" type="radio" name="Apartaments">
+                    <input class="control-input" id="radio-3" type="radio" name="acomodation" value="Apartaments">
                     <label class="control-lable" for="radio-3">
                       Апартаменты
                     </label>
@@ -157,28 +156,22 @@
                   </li>
                 </ul>
             </form>
-          </div>
-          <div class="product-container">
-            <h2 class="section-subtitle">Найдено гостиниц: 38</h2>
-            <form class="sorting-type">
-          <label class="visually-hidden" for="sorting">
-            Сортировка
-          </label>
-          <select class="select-control" id="sorting" name="sorting">
-            <option value="popular">
-              Сначала популярные
-            </option>
-            <option value="cheep" selected>
-              Сначала дешевые
-            </option>
-            <option value="expensive">
-              Сначала дорогие
-            </option>
-          </select>
-          <button class="visually-hidden" type="submit">
-            Отсотрировать продукты
-          </button>
-            </form>
+        </div>
+        <div class="sorting-container">
+          <h2 class="section-subtitle sorting-subtitle">Найдено гостиниц: 38</h2>
+          <form class="sorting-type">
+            <select class="select-control" id="sorting" name="sorting">
+                <option value="popular">
+                  Сначала популярные
+                </option>
+                <option value="cheep" selected>
+                  Сначала дешевые
+                </option>
+                <option value="expensive">
+                  Сначала дорогие
+                </option>
+            </select>
+          </form>
             <a href="#" class="regular-button catalog-type-button">
           <span class="visually-hidden">
             Показать карточки
@@ -194,6 +187,8 @@
             Показать список
           </span>
             </a>
+        </div>
+        <div class="product-container">
             <ul class="product-cart-list">
           <li class="product-cart-item">
             <a class="product-cart-link" href="product.html">
@@ -267,67 +262,69 @@
             <button class="regular-button show-more-button blue-button" type="button">
           Загрузить еще
             </button>
+            <div class="pagination-container">
             <ul class="pagination-list">
-            <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
-            </li>
-            <li class="pagination-item">
-            <a href="#" class="pagination-link">2</a>
-            </li>
-            <li class="pagination-item">
-            <a href="#" class="pagination-link">3</a>
-            </li>
-            <li class="pagination-item">
-            <a href="#" class="pagination-link">4</a>
-            </li>
-            <li class="pagination-item">
-            <a href="#" class="pagination-link">...</a>
-            </li>
-            <li class="pagination-item">
-            <a href="#" class="pagination-link">10</a>
-            </li>
+              <li class="pagination-item">
+                <a class="pagination-link pagination-current">1</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination-link">2</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination-link">3</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination-link">4</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination-link">...</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination-link">10</a>
+              </li>
             </ul>
-            <form class="sorting-type">
-          <label class="sorting" for="sorting">
-            Гостиниц на странице:
-          </label>
-          <select class="select-control" id="sorting" name="sorting">
-            <option value="4" selected>
-              4
-            </option>
-            <option value="8">
-              8
-            </option>
-            <option value="12">
-              12
-            </option>
-          </select>
-          <button class="visually-hidden" type="submit">
-            Отбразить количество
-          </button>
-            </form>
-          </div>
-        </section>
-        <section class="catalog-newsletter">
-          <h2 class="section-title">Подпишитесь на рассылку</h2>
-          <p class="newsletter-description">
-            Только полезная информация и никакого спама,
-            <br>честное бойскаутское!
-          </p>
-          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="newsletter-email">
-              <label class="visually-hidden" for="newsletter-email">Email</label>
-              <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+            <form class="paging-type">
+              <label class="sorting" for="sorting">
+                Гостиниц на странице:
+              </label>
+              <select class="select-control" id="sorting" name="sorting">
+                <option value="4" selected>
+                  4
+                </option>
+                <option value="8">
+                  8
+                </option>
+                <option value="12">
+                  12
+                </option>
+              </select>
+              <button class="visually-hidden" type="submit">
+                Отбразить количество
+              </button>
+                </form>
             </div>
-            <button class="regular-button subscribe-button blue-button" type="submit">Подписаться</button>
-          </form>
-      </div>
+        </div>
+      </section>
+      <section class="catalog-newsletter">
+        <h2 class="section-title">Подпишитесь на рассылку</h2>
+        <p class="catalog-newsletter-description">
+          Только полезная информация и никакого спама,
+          <br>честное бойскаутское!
+        </p>
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="newsletter-email">
+            <label class="visually-hidden" for="newsletter-email">Email</label>
+            <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+          </div>
+          <button class="regular-button subscribe-button blue-button" type="submit">Подписаться</button>
+        </form>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer-container">
-      <h1 class="visually-hidden section-title" hidden>Свяжись с нами</h1>
+      <h2 class="visually-hidden section-title">Свяжись с нами</h2>
       <section class="social">
-        <h2 class="visually-hidden section-title" hidden>Социальные Сети</h2>
+        <h3 class="visually-hidden section-title">Социальные Сети</h3>
         <ul class="social-list">
           <li class="social-item">
             <a class="regular-button blue-button" href="#">
@@ -347,15 +344,16 @@
         </ul>
       </section>
       <section class="contacts">
-        <h2 class="visually-hidden section-title" hidden>Номер Телефона</h2>
+        <h3 class="visually-hidden section-title">Номер Телефона</h3>
         <a class="contacts-phone" href="tel:+7 (812) 812-12-12">+7 (812) 812-12-12</a>
       </section>
       <section class="about">
-        <h2 class="visually-hidden section-title" hidden>Сайт Организации</h2>
+        <h3 class="visually-hidden section-title">Сайт Организации</h3>
         <a class="htmlacademy-link button" href="https://htmlacademy.ru/">.html academy</a>
       </section>
       </div>
     </footer>
+  </div>
   </body>
 </html>
 
