@@ -541,6 +541,12 @@ body {
   background: rgba(131, 179, 211, 0.12);
 }
 
+.features-area h3,
+.features-road h3,
+.features-tourist h3 {
+  color:#000000
+}
+
 .features-road {
   background-color: rgba(131, 179, 211, 0.2);;
 }
@@ -562,6 +568,7 @@ body {
 .features-souvenirs h3 {
   position: relative;
   padding-top: 86px;
+  color:#000000
 }
 
 .features-housing h3::before,
@@ -770,6 +777,10 @@ body {
   padding-bottom: 137px;
   background: none;
   color: #000000;
+}
+
+.catalog-subscribe p {
+  color: #333333
 }
 
 .main-footer {
@@ -1785,7 +1796,6 @@ body {
 .modal {
   position: relative;
   margin: auto;
-  top: 390px;
   padding: 70px;
   padding-top: 62px;
   box-sizing: border-box;
